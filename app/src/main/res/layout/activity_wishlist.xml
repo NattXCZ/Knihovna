@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="model"
+            type="com.example.knihovna.viewModels.WishlistActivityViewModel"
+            />
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WishlistActivity"
+    android:background="@color/green_ultra_light">
+
+    <View
+        android:id="@+id/box_find"
+        android:layout_width="fill_parent"
+        android:layout_height="60sp"
+        android:layout_margin="20sp"
+        android:background="@drawable/rounded_background"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/autocomplete_text"
+        android:layout_width="0sp"
+
+        android:hint="@string/title_find"
+        android:singleLine="true"
+        style="@style/FindTextView"
+        app:layout_constraintLeft_toRightOf="@id/find_pic"
+        app:layout_constraintTop_toTopOf="@id/box_find"
+        app:layout_constraintBottom_toBottomOf="@id/box_find"
+        app:layout_constraintRight_toRightOf="@id/box_find"/>
+
+    <ImageView
+        android:id="@+id/find_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/box_find"
+        app:layout_constraintLeft_toLeftOf="@id/box_find"
+        app:layout_constraintTop_toTopOf="@id/box_find"
+        app:srcCompat="@android:drawable/ic_menu_search"
+        app:tint="@color/black" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:id = "@+id/recycler_view"
+
+        style="@style/RecView"
+        app:layout_constraintTop_toBottomOf="@id/box_find"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Knihovna" parent="Theme.MaterialComponents.Light.DarkActionBar">
+
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/green_turquoise</item>
+        <item name="colorPrimaryVariant">@color/green_turquoise</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/green_turquoise_dark</item>
+        <item name="colorSecondaryVariant">@color/green_turquoise_dark</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+
+
+    </style>
+</resources>

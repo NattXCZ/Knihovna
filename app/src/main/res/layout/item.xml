@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+
+    android:backgroundTint="@color/white"
+
+    android:background="@drawable/rounded_background"
+
+    android:orientation="horizontal">
+
+    <GridLayout
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/item_fav_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/null_holder"
+            android:textSize="18dp"
+            android:textColor="@color/dark_grey_black"
+
+            android:minWidth="70dp"
+            android:gravity="end"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+
+
+
+        <TextView
+            android:id="@+id/item_fav_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/null_holder"
+            android:textSize="15dp"
+
+
+            android:minWidth="70dp"
+            android:gravity="end"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+
+
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+
+    </GridLayout>
+    <ImageView
+        android:id="@+id/item_fav_icon"
+        android:layout_width="44dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+
+        android:src="@drawable/heart_icon_full"
+
+        app:layout_constraintBottom_toBottomOf="@id/grid_view"
+        app:layout_constraintTop_toTopOf="@id/grid_view"
+        app:layout_constraintRight_toRightOf="@id/grid_view"
+/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

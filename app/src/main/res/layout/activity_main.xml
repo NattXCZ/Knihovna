@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="model"
+            type="com.example.knihovna.viewModels.MainActivityViewModel"
+            />
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_all_books"
+        style="@style/MainButtons"
+        android:text="@string/title_your_books"
+        android:drawableLeft="@drawable/books_icon"
+        android:onClick="@{model::AllBClick}"/>
+
+    <Button
+        android:id="@+id/button_add_all_books"
+        style="@style/MainButtons"
+        android:drawableLeft="@drawable/add_icon"
+        android:onClick="@{model::AddAllBClick}"
+        android:text="@string/title_add"
+        app:layout_constraintTop_toBottomOf = "@id/button_all_books"
+/>
+
+    <Button
+        android:id="@+id/button_wishlist"
+        style="@style/MainButtons"
+        android:layout_marginTop="44dp"
+        android:drawableLeft="@drawable/sparkling_icon"
+        android:onClick="@{model::WishlistClick}"
+        android:text="@string/title_wish_list"
+        app:layout_constraintTop_toBottomOf="@id/button_add_all_books"
+        tools:layout_editor_absoluteX="24dp" />
+
+    <Button
+        android:id="@+id/button_add_wish_books"
+        style="@style/MainButtons"
+        android:drawableLeft="@drawable/add_icon"
+        android:onClick="@{model::AddWishlistBClick}"
+        android:text="@string/title_add"
+        app:layout_constraintTop_toBottomOf = "@id/button_wishlist"/>
+
+
+    <Button
+        android:id="@+id/button_favs_books"
+        style="@style/MainButtons"
+        android:layout_marginTop="56dp"
+        android:drawableLeft="@drawable/heart_icon"
+        android:onClick="@{model::FavsBClick}"
+        android:text="@string/title_favourites"
+        app:layout_constraintTop_toBottomOf="@id/button_add_wish_books"
+        tools:layout_editor_absoluteX="24dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

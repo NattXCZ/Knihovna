@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Knihovna</string>
+    <string name="title_your_books">Moje knihy</string>
+    <string name="title_wish_list">Seznam přání</string>
+    <string name="title_favourites">Oblíbené</string>
+    <string name="title_add">Přidat knihu</string>
+    <string name="title_settings">Nastavení</string>
+    <string name="title_detail_of_book">Detail knihy</string>
+
+    <string name="title_add_wishlist">Přidat knihu do seznamu přání</string>
+
+
+    <string name="title_add_button">Přidat</string>
+    <string name="title_delete_button">Odstranit</string>
+    <string name="title_edit_button">Upravit</string>
+     <string name="title_find">Hledat</string>
+
+
+    <string name="title_fav">Přidat do oblíbených:</string>
+    <string name="title_rating">Hodnocení:</string>
+    <string name="title_num_page">Počet stran:</string>
+    <string name="title_lang">Jazyk:</string>
+    <string name="title_year">Rok vydání:</string>
+    <string name="title_genre">Žánr:</string>
+
+    <string name="title_hit_series">Knižní série</string>
+    <string name="title_hit_author">Autor</string>
+    <string name="title_hit_name_book">Název knihy</string>
+
+    <!-- pro roletku -->
+    <string-array name="languages">
+        <item>Čeština</item>
+        <item>Angličtina</item>
+        <item>Ruština</item>
+    </string-array>
+
+    <string-array name="genre">
+        <item>Detektivní</item>
+        <item>Fantasy</item>
+        <item>Horor</item>
+        <item>Klasická literatura</item>
+        <item>Komiks a manga</item>
+        <item>Literatura faktu</item>
+        <item>Poezie a básně</item>
+        <item>Pohádka</item>
+        <item>Science-fiction</item>
+        <item>Thriller</item>
+        <item>Učebnice</item>
+        <item>Young adult</item>
+    </string-array>
+
+
+    <string name="owned">Knihu vlastníte</string>
+    <string name="not_owned">Knihu nevlastníte</string>
+
+    <string name="read">Kniha již přečtena</string>
+    <string name="not_read">Kniha zatím nepřečtena</string>
+
+
+    <string name="author_str">Autor:\t</string>
+    <string name="series_str">Série:\t</string>
+    <string name="pages_num_str">Počet stran:\t</string>
+    <string name="year_str">Rok vydání:\t</string>
+
+
+    <string name="title_edit_own">Vlastním</string>
+    <string name="title_edit_read">Přečteno</string>
+
+
+    <string name="null_holder">NULL NULL</string>
+
+</resources>
